@@ -1,0 +1,13 @@
+¿Para qué sirve el comando npm init?
+
+Las siglas significan: Node package manager
+npm es un gestor de paquetes para los proyectos de Node.js disponibles para su uso público. Los proyectos 
+disponibles en el registro de npm se llaman paquetes
+npm nos permite utilizar fácilmente el código escrito por otros sin necesidad de escribirlo nosotros mismos 
+durante el desarrollo.
+
+------------npm init-------------------
+El comando init se utiliza para inicializar un proyecto. Cuando ejecutas este comando, crea un archivo package.json.
+Al ejecutar npm init, se te pedirá que proporciones cierta información sobre el proyecto que estás inicializando. 
+Esta información incluye el nombre del proyecto, el tipo de licencia, la versión, etc.
+Para saltarte el proceso de proporcionar la información tú mismo, puedes simplemente ejecutar el comando npm init -y.

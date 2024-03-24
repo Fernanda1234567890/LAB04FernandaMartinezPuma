@@ -1,0 +1,32 @@
+—¿Cómo es que se instalan paquetes con yarn?
+maneras de instalar Yarn:
+Deberás tener instalado Node.js para poder utilizarlo
+1. Descargando el instalador de ventana
+2. Esta es la manera más rápida y fácil de instalar Yarn , ejecuta en tu consola o terminal lo siguiente:
+        npm install --global yarn
+Ahora comprueba que Yarn se instala correctamente ejecutando el siguiente comando:
+    yarn --version
+Si todo salio bien deberás de aparecerte la versión más reciente de Yarn
+
+—¿Cómo es que se borran paquetes con yarn?
+yarn remove <package...> 
+La ejecución yarn remove fooeliminará el paquete nombrado foode sus dependencias directas actualizando sus archivos 
+package.jsony yarn.locken el proceso.
+Otros desarrolladores que trabajan en el proyecto pueden yarn installsincronizar sus propios node_modulesdirectorios 
+con el conjunto actualizado de dependencias.
+Cuando eliminas un paquete, se elimina de todo tipo de dependencias: dependencies, devDependencies, etc.
+
+—¿Hay algún equivalente en yarn que haga lo mismo que npm 
+
+- El archivo yarn.lock
+    En package.json, el archivo donde tanto NPM como Yarn hacen un seguimiento de las dependencias del proyecto, los 
+    números de versión no siempre son exactos. En su lugar, se puede definir una gama de versiones. De esta manera se 
+    puede elegir una versión mayor y menor específica de un paquete y permite que NPM pueda instalar el último parche 
+    que corrige algunos errores.
+- Yarn y npm tienen formas más o menos similares de administrar las dependencias. Ambos proporcionan el archivo 
+    package.json que existe en la raíz del directorio de trabajo del proyecto. Este archivo mantiene todos los metadatos 
+    relevantes asociados con el proyecto.
+- Ambos administradores de paquetes almacenan archivos de dependencia en la carpeta node_modules. Sin embargo, en Yarn 2, 
+    la carpeta ya no será compatible de forma predeterminada.
+- Además, tanto Yarn como npm proporcionan un archivo de bloqueo generado automáticamente que tiene las entradas de las 
+    versiones exactas de las dependencias utilizadas en el proyecto.
